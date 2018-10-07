@@ -1,0 +1,20 @@
+## This is sample usage for the volume. 
+
+
+
+spec: 
+  ...     
+    ...
+    ...
+    volumeMounts:
+      - name: application-namespace-componet-1
+      mountPath: /opt/enterprise/log
+
+volumes:
+- name: application-namespace-componet-1
+  flexVolume:
+    driver: ceph.rook.io/rook
+    fsType: ceph
+    options:
+      fsName: high 
+      clusterNamespace: cloud_log
