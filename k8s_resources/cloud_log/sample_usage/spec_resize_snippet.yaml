@@ -1,0 +1,18 @@
+--- 
+ ...     
+  ...
+ ...
+spec:
+  containers:
+  - command:
+    - kube-apiserver
+    - --admission-control=PersistentVolumeClaimResize,Initializers,NamespaceLifecycle,LimitRanger,ServiceAccount,DefaultStorageClass,DefaultTolerationSeconds,NodeRestriction,ResourceQuota
+    - --feature-gates=ExpandPersistentVolumes=true
+--- 
+ ...     
+  ...
+spec:
+  containers:
+  - command:
+    - kube-controller-manager
+    - --feature-gates=ExpandPersistentVolumes=true
