@@ -1,0 +1,38 @@
+---
+apiVersion: ... 
+  ...
+  ...
+
+
+prometheus:
+  storageSpec:
+    volumeClaimTemplate:
+      spec:
+        storageClassName: cloud-log
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 10Gi
+
+grafana:
+  auth:
+    anonymous:
+      enabled: "false"
+  adminPassword: "base-access"
+  ingress:
+    enabled: true
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      kubernetes.io/tls-acme: "true"
+    hosts: 
+      - grafana.enterprise.componet.com
+    tls:
+      - secretName: grafana-tls
+        hosts:
+          - grafana.enterprise.componet.com
+  storageSpec:
+    class: cloud-log
+    accessMode: "ReadWriteOnce"
+    resources:
+      requests:
+        storage: 10Gi

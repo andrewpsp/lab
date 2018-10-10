@@ -1,0 +1,13 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: application-componet-1
+  labels:
+    app: application-componet-1
+spec:
+  selector:
+    matchLabels:
+      app: application-componet-1
+  endpoints:
+  - port: custom
+    interval: 10s
