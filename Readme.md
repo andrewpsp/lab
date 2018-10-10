@@ -25,3 +25,4 @@ This will build a local Kubernetes image that uses the certified snap a full imp
 
 - Deploy multi-tier application 
 - Implement component instrumentation 
+- Update EFK stack ; fluentd to fluent bit
