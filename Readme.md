@@ -17,4 +17,11 @@ Stack includes :
 #  Instantiate cluster via Vagrantfile 
 
 `vagrant up`
-This will build a local Kubernetes image that uses the certified snap a full implmenation of the K8s technology (No toys) configuration deployments in the corrensponding directoris of the project.
+This will build a local Kubernetes image that uses the certified snap a full implmenation of the K8s technology (No toys) configuration deployments in the corrensponding directories of the project.
+
+
+
+# TODO 
+
+- Deploy multi-tier application 
+- Implement component instrumentation 
