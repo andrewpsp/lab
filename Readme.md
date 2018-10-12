@@ -3,7 +3,7 @@
 
 Developing on fast and secure upstream Kubernetes
 Designed for developing Kubernetes Workloads locally
-[Learn more about microk8s here][https://microk8s.io] 
+[Learn more about microk8s](https://microk8s.io)
 
 
 
@@ -26,3 +26,4 @@ This will build a local Kubernetes image that uses the certified snap a full imp
 - Deploy multi-tier application 
 - Implement component instrumentation 
 - Update EFK stack ; fluentd to fluent bit
+- Add Bastion host 
