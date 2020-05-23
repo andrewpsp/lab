@@ -1,7 +1,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: max-db-data
+  name: max-data-db
 spec:
   # Only one node can mount the volume in Read/Write
   # mode at a time
